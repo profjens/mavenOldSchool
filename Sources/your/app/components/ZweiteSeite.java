@@ -40,6 +40,9 @@ public class ZweiteSeite extends ERXComponent {
     }
     public WOActionResults selectUser() {
     	aUser = aU;
+    	if (aU.myTimeInJava()!=null) {
+    		setFerienstartDatum(aUser.myTimeInJava());
+    	}
     	return null;
     }
     public WOActionResults save() {
